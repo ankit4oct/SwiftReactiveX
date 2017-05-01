@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3BC6503207FFDF9D52E355 /* Pods_SwiftReactiveX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1753C25A72270FA33913A232 /* Pods_SwiftReactiveX.framework */; };
 		C969D1BC1EB50C2A001B1A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969D1BB1EB50C2A001B1A41 /* AppDelegate.swift */; };
 		C969D1BE1EB50C2A001B1A41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969D1BD1EB50C2A001B1A41 /* ViewController.swift */; };
 		C969D1C11EB50C2A001B1A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C969D1BF1EB50C2A001B1A41 /* Main.storyboard */; };
 		C969D1C31EB50C2A001B1A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C969D1C21EB50C2A001B1A41 /* Assets.xcassets */; };
 		C969D1C61EB50C2A001B1A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C969D1C41EB50C2A001B1A41 /* LaunchScreen.storyboard */; };
+		C969D1CE1EB5284B001B1A41 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C969D1CD1EB5284B001B1A41 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1753C25A72270FA33913A232 /* Pods_SwiftReactiveX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftReactiveX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE8EBD87919ED3067F628DEF /* Pods-SwiftReactiveX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReactiveX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftReactiveX/Pods-SwiftReactiveX.release.xcconfig"; sourceTree = "<group>"; };
 		C969D1B81EB50C2A001B1A41 /* SwiftReactiveX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftReactiveX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C969D1BB1EB50C2A001B1A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C969D1BD1EB50C2A001B1A41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		C969D1C21EB50C2A001B1A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C969D1C51EB50C2A001B1A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C969D1C71EB50C2A001B1A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C969D1CD1EB5284B001B1A41 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../TableViewCell.swift; sourceTree = "<group>"; };
+		FA1D19F51CB1C7E19AD57ED1 /* Pods-SwiftReactiveX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReactiveX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftReactiveX/Pods-SwiftReactiveX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3BC6503207FFDF9D52E355 /* Pods_SwiftReactiveX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FF827BB2533AEDF7E6217A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D19F51CB1C7E19AD57ED1 /* Pods-SwiftReactiveX.debug.xcconfig */,
+				AE8EBD87919ED3067F628DEF /* Pods-SwiftReactiveX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D1F976DF37C49A530648BD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1753C25A72270FA33913A232 /* Pods_SwiftReactiveX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C969D1AF1EB50C2A001B1A41 = {
 			isa = PBXGroup;
 			children = (
 				C969D1BA1EB50C2A001B1A41 /* SwiftReactiveX */,
 				C969D1B91EB50C2A001B1A41 /* Products */,
+				2FF827BB2533AEDF7E6217A6 /* Pods */,
+				8D1F976DF37C49A530648BD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +83,7 @@
 				C969D1BB1EB50C2A001B1A41 /* AppDelegate.swift */,
 				C969D1BD1EB50C2A001B1A41 /* ViewController.swift */,
 				C969D1BF1EB50C2A001B1A41 /* Main.storyboard */,
+				C969D1CD1EB5284B001B1A41 /* TableViewCell.swift */,
 				C969D1C21EB50C2A001B1A41 /* Assets.xcassets */,
 				C969D1C41EB50C2A001B1A41 /* LaunchScreen.storyboard */,
 				C969D1C71EB50C2A001B1A41 /* Info.plist */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C969D1CA1EB50C2A001B1A41 /* Build configuration list for PBXNativeTarget "SwiftReactiveX" */;
 			buildPhases = (
+				450378821C31A86C02D15EF2 /* [CP] Check Pods Manifest.lock */,
 				C969D1B41EB50C2A001B1A41 /* Sources */,
 				C969D1B51EB50C2A001B1A41 /* Frameworks */,
 				C969D1B61EB50C2A001B1A41 /* Resources */,
+				A787FAA30486CD9BDDD3072F /* [CP] Embed Pods Frameworks */,
+				359B12678E3DECF56548706D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +162,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		359B12678E3DECF56548706D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftReactiveX/Pods-SwiftReactiveX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		450378821C31A86C02D15EF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A787FAA30486CD9BDDD3072F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftReactiveX/Pods-SwiftReactiveX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C969D1B41EB50C2A001B1A41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C969D1CE1EB5284B001B1A41 /* TableViewCell.swift in Sources */,
 				C969D1BE1EB50C2A001B1A41 /* ViewController.swift in Sources */,
 				C969D1BC1EB50C2A001B1A41 /* AppDelegate.swift in Sources */,
 			);
@@ -259,6 +338,7 @@
 		};
 		C969D1CB1EB50C2A001B1A41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1D19F51CB1C7E19AD57ED1 /* Pods-SwiftReactiveX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PPFQTYCRTS;
@@ -272,6 +352,7 @@
 		};
 		C969D1CC1EB50C2A001B1A41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE8EBD87919ED3067F628DEF /* Pods-SwiftReactiveX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PPFQTYCRTS;
@@ -302,6 +383,7 @@
 				C969D1CC1EB50C2A001B1A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
