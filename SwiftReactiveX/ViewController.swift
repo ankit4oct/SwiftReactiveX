@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-struct Person{
+struct Human{
  
     let name : String
     let age : Int
@@ -21,19 +21,16 @@ struct Person{
 
 class ViewController: UIViewController {
     
-    let personArray =
+    let humanArray =
     [
         
-        Person(name: "name1", age: 10),
-        Person(name: "name2", age: 11),
-        Person(name: "name3", age: 12),
-        Person(name: "name4", age: 15),
-        Person(name: "name5", age: 13),
-        Person(name: "name6", age: 18),
-        Person(name: "name7", age: 22),
-        Person(name: "name8", age: 24),
-        Person(name: "name9", age: 29),
-        Person(name: "name10", age: 32)
+        Human(name: "John", age: 10),
+        Human(name: "Rex", age: 11),
+        Human(name: "Tina", age: 12),
+        Human(name: "Yen", age: 15),
+        Human(name: "Tom", age: 13),
+        Human(name: "Jim", age: 18),
+        Human(name: "Anderson", age: 22),
     ]
     
     let disposeBag = DisposeBag()
@@ -42,20 +39,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let objAray : Observable<[Person]> = Observable.just(personArray)
+        let objAray : Observable<[Human]> = Observable.just(humanArray)
         objAray.bind(to: myTable.rx.items(cellIdentifier: "reuseIdentifier")){
             
-            _, person, cell in
+            _, human, cell in
             if let cellToUse = cell as? TableViewCell {
-                cellToUse.label1.text = person.name
-                cellToUse.label2.text = "\(person.age)"
+                cellToUse.label1.text = human.name
+                cellToUse.label2.text = "\(human.age)"
             }
         }.addDisposableTo(disposeBag)
         
         
-        myTable.rx.modelSelected(Person.self).subscribe(onNext:{
-             person in
-            print(person.name)
+        myTable.rx.modelSelected(Human.self).subscribe(onNext:{
+             human in
+            print(human.name)
         
         } ).addDisposableTo(disposeBag)
         
@@ -64,7 +61,7 @@ class ViewController: UIViewController {
         [weak self] indexPath in
             if let cell = self?.myTable.cellForRow(at: indexPath) as? TableViewCell{
                
-                cell.label1.text = "newValue"
+                cell.label1.text = "MyChoice"
                 
             }
             
